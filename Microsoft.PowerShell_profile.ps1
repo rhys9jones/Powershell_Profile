@@ -12,6 +12,10 @@ function Global:prompt {
 	"$(Get-Location) $hr`nPS >"
     }
 
+
+# --- Set Alias'
+Set-Alias em emacs.lnk
+
 # --- Set constants
 $MaximumHistoryCount = 200    
 $historyPath = Join-Path (split-path $profile) history.clixml
